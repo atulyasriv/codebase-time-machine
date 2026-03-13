@@ -10,20 +10,20 @@
     />
     <style>
       :root {
-        --bg: #080a0f;
-        --surface: #0d1117;
-        --surface2: #161b22;
-        --surface3: #1e2530;
-        --border: rgba(255, 255, 255, 0.06);
-        --border-bright: rgba(255, 255, 255, 0.12);
-        --accent: #00e5ff;
-        --accent2: #7c3aed;
-        --accent3: #10b981;
-        --accent4: #f59e0b;
-        --accent5: #ef4444;
-        --text: #e6edf3;
-        --text-muted: #7d8590;
-        --text-dim: #3d444d;
+        --bg: #0e0a12;
+        --surface: #160f1e;
+        --surface2: #1e1428;
+        --surface3: #271a33;
+        --border: rgba(196, 154, 210, 0.1);
+        --border-bright: rgba(196, 154, 210, 0.22);
+        --accent: #a8d5c2;
+        --accent2: #7b3f7a;
+        --accent3: #c47ab5;
+        --accent4: #d4a0c8;
+        --accent5: #e05c8a;
+        --text: #f0e8f5;
+        --text-muted: #a890b8;
+        --text-dim: #5a4468;
       }
       * {
         margin: 0;
@@ -47,8 +47,8 @@
         z-index: 0;
         pointer-events: none;
         background-image:
-          linear-gradient(rgba(0, 229, 255, 0.03) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(0, 229, 255, 0.03) 1px, transparent 1px);
+          linear-gradient(rgba(196, 154, 210, 0.04) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(196, 154, 210, 0.04) 1px, transparent 1px);
         background-size: 60px 60px;
       }
       .bg-orb {
@@ -61,14 +61,14 @@
       .orb1 {
         width: 600px;
         height: 600px;
-        background: rgba(124, 58, 237, 0.12);
+        background: rgba(123, 63, 122, 0.18);
         top: -200px;
         right: -200px;
       }
       .orb2 {
         width: 400px;
         height: 400px;
-        background: rgba(0, 229, 255, 0.08);
+        background: rgba(168, 213, 194, 0.1);
         bottom: 100px;
         left: -100px;
       }
@@ -88,7 +88,7 @@
         position: sticky;
         top: 0;
         z-index: 100;
-        background: rgba(8, 10, 15, 0.85);
+        background: rgba(14, 10, 18, 0.88);
         backdrop-filter: blur(20px);
       }
       .nav {
@@ -1121,14 +1121,14 @@
       <div class="container">
         <section class="hero">
           <div class="hero-badge">
-            <span>●</span> Powered by GitHub API — Real data, any repo
+            <span></span> Powered by GitHub API. Real data, any repo!
           </div>
           <h1>
             Your Codebase,<br /><span class="gradient">Through Time</span>
           </h1>
           <p class="hero-desc">
             Paste any public GitHub repo. Get real commit history, contributor
-            stats, language breakdown, and activity heatmaps — instantly.
+            stats, language breakdown and activity heatmaps instantly.
           </p>
         </section>
 
@@ -1458,7 +1458,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
     <script>
-      const API_BASE = "https://codebase-time-machine.onrender.com";
+      const API_BASE = "http://localhost:8000";
       let activityChart = null;
       let graphAnimId = null;
       let currentData = null;
