@@ -40,7 +40,6 @@
         min-height: 100vh;
         overflow-x: hidden;
       }
-
       .bg-grid {
         position: fixed;
         inset: 0;
@@ -72,7 +71,6 @@
         bottom: 100px;
         left: -100px;
       }
-
       .container {
         max-width: 1400px;
         margin: 0 auto;
@@ -80,8 +78,6 @@
         position: relative;
         z-index: 1;
       }
-
-      /* HEADER */
       header {
         padding: 20px 0;
         border-bottom: 1px solid var(--border);
@@ -168,18 +164,6 @@
         color: var(--text);
         border-color: var(--border-bright);
       }
-      .btn-primary {
-        background: var(--accent);
-        color: #000;
-        box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
-      }
-      .btn-primary:hover {
-        background: #33eaff;
-        box-shadow: 0 0 30px rgba(0, 229, 255, 0.5);
-        transform: translateY(-1px);
-      }
-
-      /* HERO */
       .hero {
         padding: 70px 0 50px;
         text-align: center;
@@ -190,8 +174,8 @@
         gap: 8px;
         padding: 6px 16px;
         border-radius: 100px;
-        background: rgba(0, 229, 255, 0.08);
-        border: 1px solid rgba(0, 229, 255, 0.2);
+        background: rgba(168, 213, 194, 0.08);
+        border: 1px solid rgba(168, 213, 194, 0.2);
         font-family: "JetBrains Mono", monospace;
         font-size: 12px;
         color: var(--accent);
@@ -229,8 +213,6 @@
           transform: translateY(0);
         }
       }
-
-      /* INPUT */
       .input-section {
         animation: fadeUp 0.6s 0.3s ease both;
         margin-bottom: 60px;
@@ -250,7 +232,7 @@
       .repo-input-wrap:focus-within {
         border-color: var(--accent);
         box-shadow:
-          0 0 30px rgba(0, 229, 255, 0.15),
+          0 0 30px rgba(168, 213, 194, 0.15),
           0 4px 40px rgba(0, 0, 0, 0.4);
       }
       .repo-prefix {
@@ -292,7 +274,7 @@
       }
       .analyze-btn:hover:not(:disabled) {
         transform: scale(1.02);
-        box-shadow: 0 4px 20px rgba(124, 58, 237, 0.4);
+        box-shadow: 0 4px 20px rgba(123, 63, 122, 0.4);
       }
       .analyze-btn:disabled {
         opacity: 0.5;
@@ -325,14 +307,12 @@
       .repo-tag:hover {
         border-color: var(--accent);
         color: var(--accent);
-        background: rgba(0, 229, 255, 0.05);
+        background: rgba(168, 213, 194, 0.05);
       }
-
-      /* RATE LIMIT WARNING */
       .rate-banner {
         display: none;
-        background: rgba(245, 158, 11, 0.1);
-        border: 1px solid rgba(245, 158, 11, 0.3);
+        background: rgba(212, 160, 200, 0.1);
+        border: 1px solid rgba(212, 160, 200, 0.3);
         border-radius: 10px;
         padding: 12px 16px;
         margin-bottom: 20px;
@@ -342,14 +322,12 @@
       .rate-banner a {
         color: var(--accent4);
       }
-
-      /* LOADING */
       .loading-overlay {
         display: none;
         position: fixed;
         inset: 0;
         z-index: 200;
-        background: rgba(8, 10, 15, 0.8);
+        background: rgba(14, 10, 18, 0.85);
         backdrop-filter: blur(6px);
         align-items: center;
         justify-content: center;
@@ -372,11 +350,6 @@
           transform: rotate(360deg);
         }
       }
-      .loading-text {
-        font-family: "JetBrains Mono", monospace;
-        font-size: 14px;
-        color: var(--text-muted);
-      }
       .loading-steps {
         display: flex;
         flex-direction: column;
@@ -397,12 +370,10 @@
       .load-step.active {
         color: var(--accent);
       }
-
-      /* ERROR */
       .error-card {
         display: none;
-        background: rgba(239, 68, 68, 0.08);
-        border: 1px solid rgba(239, 68, 68, 0.25);
+        background: rgba(224, 92, 138, 0.08);
+        border: 1px solid rgba(224, 92, 138, 0.25);
         border-radius: 14px;
         padding: 24px;
         margin-bottom: 24px;
@@ -422,8 +393,6 @@
         color: var(--text-muted);
         font-family: "JetBrains Mono", monospace;
       }
-
-      /* DASHBOARD */
       .dashboard {
         padding-bottom: 80px;
         display: none;
@@ -431,7 +400,6 @@
       .dashboard.show {
         display: block;
       }
-
       .section-title {
         font-size: 12px;
         font-weight: 600;
@@ -450,8 +418,6 @@
         border-radius: 2px;
         display: block;
       }
-
-      /* REPO META */
       .repo-meta {
         display: flex;
         align-items: center;
@@ -504,32 +470,30 @@
         border: 1px solid transparent;
       }
       .tag-cyan {
-        background: rgba(0, 229, 255, 0.08);
+        background: rgba(168, 213, 194, 0.08);
         color: var(--accent);
-        border-color: rgba(0, 229, 255, 0.2);
+        border-color: rgba(168, 213, 194, 0.2);
       }
       .tag-purple {
-        background: rgba(124, 58, 237, 0.08);
-        color: #a78bfa;
-        border-color: rgba(124, 58, 237, 0.2);
+        background: rgba(123, 63, 122, 0.08);
+        color: #c47ab5;
+        border-color: rgba(123, 63, 122, 0.2);
       }
       .tag-green {
-        background: rgba(16, 185, 129, 0.08);
+        background: rgba(196, 122, 181, 0.08);
         color: var(--accent3);
-        border-color: rgba(16, 185, 129, 0.2);
+        border-color: rgba(196, 122, 181, 0.2);
       }
       .tag-amber {
-        background: rgba(245, 158, 11, 0.08);
+        background: rgba(212, 160, 200, 0.08);
         color: var(--accent4);
-        border-color: rgba(245, 158, 11, 0.2);
+        border-color: rgba(212, 160, 200, 0.2);
       }
       .tag-red {
-        background: rgba(239, 68, 68, 0.08);
+        background: rgba(224, 92, 138, 0.08);
         color: var(--accent5);
-        border-color: rgba(239, 68, 68, 0.2);
+        border-color: rgba(224, 92, 138, 0.2);
       }
-
-      /* STATS */
       .stats-row {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -570,8 +534,6 @@
         font-size: 13px;
         color: var(--text-muted);
       }
-
-      /* TIME CONTROL */
       .time-control {
         background: var(--surface);
         border: 1px solid var(--border);
@@ -607,7 +569,7 @@
         border-radius: 50%;
         background: var(--accent);
         cursor: pointer;
-        box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+        box-shadow: 0 0 10px rgba(168, 213, 194, 0.5);
       }
       .time-date {
         font-family: "JetBrains Mono", monospace;
@@ -616,8 +578,6 @@
         white-space: nowrap;
         min-width: 80px;
       }
-
-      /* MAIN GRID */
       .main-grid {
         display: grid;
         grid-template-columns: 1fr 360px;
@@ -651,8 +611,6 @@
       .card-body {
         padding: 20px 22px;
       }
-
-      /* HEATMAP */
       .heatmap-wrap {
         overflow-x: auto;
         padding-bottom: 6px;
@@ -708,20 +666,18 @@
         background: var(--surface3);
       }
       .h1 {
-        background: rgba(0, 229, 255, 0.2);
+        background: rgba(168, 213, 194, 0.2);
       }
       .h2 {
-        background: rgba(0, 229, 255, 0.45);
+        background: rgba(168, 213, 194, 0.45);
       }
       .h3 {
-        background: rgba(0, 229, 255, 0.7);
+        background: rgba(168, 213, 194, 0.7);
       }
       .h4 {
-        background: rgba(0, 229, 255, 0.95);
-        box-shadow: 0 0 5px rgba(0, 229, 255, 0.4);
+        background: rgba(168, 213, 194, 0.95);
+        box-shadow: 0 0 5px rgba(168, 213, 194, 0.4);
       }
-
-      /* CHART */
       .chart-wrap {
         height: 190px;
         position: relative;
@@ -729,72 +685,6 @@
       canvas {
         width: 100% !important;
       }
-
-      /* FILE LIST / COMPLEXITY */
-      .file-item {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        padding: 9px 0;
-        border-bottom: 1px solid var(--border);
-        cursor: pointer;
-        transition: padding 0.2s;
-      }
-      .file-item:last-child {
-        border-bottom: none;
-      }
-      .file-item:hover {
-        padding-left: 4px;
-      }
-      .file-icon {
-        width: 30px;
-        height: 30px;
-        border-radius: 7px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 13px;
-        flex-shrink: 0;
-      }
-      .file-info {
-        flex: 1;
-        min-width: 0;
-      }
-      .file-name {
-        font-family: "JetBrains Mono", monospace;
-        font-size: 12px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        margin-bottom: 1px;
-      }
-      .file-meta {
-        font-size: 11px;
-        color: var(--text-muted);
-      }
-      .complexity-bar-wrap {
-        width: 70px;
-      }
-      .complexity-bar {
-        height: 4px;
-        background: var(--surface3);
-        border-radius: 2px;
-        overflow: hidden;
-      }
-      .complexity-fill {
-        height: 100%;
-        border-radius: 2px;
-        transition: width 1s ease;
-      }
-      .complexity-val {
-        font-family: "JetBrains Mono", monospace;
-        font-size: 11px;
-        color: var(--text-muted);
-        text-align: right;
-        margin-top: 2px;
-      }
-
-      /* TIMELINE */
       .timeline {
         display: flex;
         flex-direction: column;
@@ -862,15 +752,11 @@
       .tl-link:hover {
         color: var(--accent);
       }
-
-      /* BOTTOM GRID */
       .bottom-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
       }
-
-      /* CONTRIBUTORS */
       .contributor-row {
         display: flex;
         align-items: center;
@@ -916,8 +802,6 @@
         min-width: 34px;
         text-align: right;
       }
-
-      /* LANGUAGE RING */
       .lang-ring-wrap {
         display: flex;
         align-items: center;
@@ -978,8 +862,6 @@
         font-size: 11px;
         color: var(--text-muted);
       }
-
-      /* REPO INFO CARD */
       .info-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1014,14 +896,12 @@
       .topic-chip {
         padding: 3px 10px;
         border-radius: 100px;
-        background: rgba(0, 229, 255, 0.06);
-        border: 1px solid rgba(0, 229, 255, 0.15);
+        background: rgba(168, 213, 194, 0.06);
+        border: 1px solid rgba(168, 213, 194, 0.15);
         font-family: "JetBrains Mono", monospace;
         font-size: 11px;
         color: var(--accent);
       }
-
-      /* TOOLTIP */
       .tooltip {
         position: fixed;
         z-index: 1000;
@@ -1036,7 +916,6 @@
         transition: opacity 0.15s;
         max-width: 220px;
       }
-
       ::-webkit-scrollbar {
         width: 5px;
         height: 5px;
@@ -1048,7 +927,6 @@
         background: var(--surface3);
         border-radius: 3px;
       }
-
       @media (max-width: 1100px) {
         .main-grid {
           grid-template-columns: 1fr;
@@ -1121,7 +999,7 @@
       <div class="container">
         <section class="hero">
           <div class="hero-badge">
-            <span></span> Powered by GitHub API. Real data, any repo!
+            <span>●</span> Powered by GitHub API. Real data, any repo!
           </div>
           <h1>
             Your Codebase,<br /><span class="gradient">Through Time</span>
@@ -1169,24 +1047,21 @@
           </div>
         </div>
 
-        <!-- RATE LIMIT WARNING -->
         <div class="rate-banner" id="rateBanner">
-          ⚠️ GitHub rate limit reached (60 req/hr for unauthenticated).
+          ⚠️ GitHub rate limit reached (60 req/hr unauthenticated).
           <a href="https://github.com/settings/tokens" target="_blank"
-            >Add a GITHUB_TOKEN</a
+            >Get a token</a
           >
-          in <code>.env</code> for 5000 req/hr.
+          and paste it into <code>GH_TOKEN</code> at the top of the script for
+          5000 req/hr.
         </div>
 
-        <!-- ERROR -->
         <div class="error-card" id="errorCard">
           <div class="error-title" id="errorTitle">Error</div>
           <div class="error-msg" id="errorMsg"></div>
         </div>
 
-        <!-- DASHBOARD -->
         <section class="dashboard" id="dashboard">
-          <!-- REPO META -->
           <div class="repo-meta">
             <div class="repo-identity">
               <img
@@ -1204,10 +1079,12 @@
             <div class="repo-tags" id="repoTags"></div>
           </div>
 
-          <!-- STATS ROW -->
           <div class="stats-row">
             <div class="stat-card">
-              <div class="stat-icon" style="background: rgba(0, 229, 255, 0.1)">
+              <div
+                class="stat-icon"
+                style="background: rgba(168, 213, 194, 0.1)"
+              >
                 ⭐
               </div>
               <div class="stat-value" id="statStars">—</div>
@@ -1216,7 +1093,7 @@
             <div class="stat-card">
               <div
                 class="stat-icon"
-                style="background: rgba(124, 58, 237, 0.1)"
+                style="background: rgba(123, 63, 122, 0.1)"
               >
                 📝
               </div>
@@ -1226,7 +1103,7 @@
             <div class="stat-card">
               <div
                 class="stat-icon"
-                style="background: rgba(16, 185, 129, 0.1)"
+                style="background: rgba(196, 122, 181, 0.1)"
               >
                 👥
               </div>
@@ -1234,7 +1111,10 @@
               <div class="stat-label">Contributors shown</div>
             </div>
             <div class="stat-card">
-              <div class="stat-icon" style="background: rgba(239, 68, 68, 0.1)">
+              <div
+                class="stat-icon"
+                style="background: rgba(224, 92, 138, 0.1)"
+              >
                 🍴
               </div>
               <div class="stat-value" id="statForks">—</div>
@@ -1242,7 +1122,6 @@
             </div>
           </div>
 
-          <!-- TIME CONTROL -->
           <div class="time-control">
             <span class="time-label" id="createdLabel">—</span>
             <input
@@ -1257,10 +1136,8 @@
             <span class="time-date" id="timeDisplay">—</span>
           </div>
 
-          <!-- MAIN GRID -->
           <div class="main-grid">
             <div style="display: flex; flex-direction: column; gap: 20px">
-              <!-- HEATMAP -->
               <div class="card">
                 <div class="card-header">
                   <div class="card-title">
@@ -1327,7 +1204,6 @@
                 </div>
               </div>
 
-              <!-- ACTIVITY CHART -->
               <div class="card">
                 <div class="card-header">
                   <div class="card-title">
@@ -1349,10 +1225,9 @@
                 </div>
               </div>
 
-              <!-- DEPENDENCY GRAPH -->
               <div class="card">
                 <div class="card-header">
-                  <div class="card-title">🕸️ File Dependency Graph</div>
+                  <div class="card-title">🕸️ Language Graph</div>
                   <span class="tag tag-green" id="graphLangTag">—</span>
                 </div>
                 <div class="card-body" style="padding: 0">
@@ -1372,9 +1247,7 @@
               </div>
             </div>
 
-            <!-- RIGHT COLUMN -->
             <div style="display: flex; flex-direction: column; gap: 20px">
-              <!-- REPO INFO -->
               <div class="card">
                 <div class="card-header">
                   <div class="card-title">ℹ️ Repository Info</div>
@@ -1385,7 +1258,6 @@
                 </div>
               </div>
 
-              <!-- RECENT COMMITS -->
               <div class="card">
                 <div class="card-header">
                   <div class="card-title">⚡ Recent Commits</div>
@@ -1408,9 +1280,7 @@
             </div>
           </div>
 
-          <!-- BOTTOM GRID -->
           <div class="bottom-grid">
-            <!-- CONTRIBUTORS -->
             <div class="card">
               <div class="card-header">
                 <div class="card-title">👥 Top Contributors</div>
@@ -1419,7 +1289,6 @@
               <div class="card-body" id="contributorsList"></div>
             </div>
 
-            <!-- LANGUAGES -->
             <div class="card">
               <div class="card-header">
                 <div class="card-title">🔬 Language Breakdown</div>
@@ -1435,8 +1304,8 @@
                       id="langRingSvg"
                     ></svg>
                     <div class="lang-ring-label">
-                      <span class="lang-ring-primary" id="langPrimary">—</span
-                      ><span class="lang-ring-sub">primary</span>
+                      <span class="lang-ring-primary" id="langPrimary">—</span>
+                      <span class="lang-ring-sub">primary</span>
                     </div>
                   </div>
                   <div class="lang-list" id="langList"></div>
@@ -1444,7 +1313,6 @@
               </div>
             </div>
 
-            <!-- REPO STATS EXTRA -->
             <div class="card">
               <div class="card-header">
                 <div class="card-title">📊 Activity Summary</div>
@@ -1458,10 +1326,213 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
     <script>
-      const API_BASE = "http://localhost:8000";
+      // =====================================================================
+      // OPTIONAL: Paste your GitHub token here for 5000 req/hr (vs 60/hr)
+      // Get one at: https://github.com/settings/tokens (no scopes needed)
+      const GH_TOKEN = "";
+      // =====================================================================
+
+      const GH_BASE = "https://api.github.com";
       let activityChart = null;
       let graphAnimId = null;
       let currentData = null;
+
+      const LANG_COLORS = {
+        JavaScript: "#f7df1e",
+        TypeScript: "#3178c6",
+        Python: "#3572A5",
+        Go: "#00ADD8",
+        Rust: "#dea584",
+        C: "#555599",
+        "C++": "#f34b7d",
+        Java: "#b07219",
+        Kotlin: "#A97BFF",
+        Ruby: "#701516",
+        PHP: "#4F5D95",
+        Swift: "#F05138",
+        Scala: "#c22d40",
+        Shell: "#89e051",
+        HTML: "#e34c26",
+        CSS: "#563d7c",
+        Makefile: "#427819",
+        Dockerfile: "#384d54",
+        Vue: "#41b883",
+        Svelte: "#ff3e00",
+        Dart: "#00B4AB",
+        Elixir: "#6e4a7e",
+        Haskell: "#5e5086",
+        Lua: "#000080",
+        R: "#198CE7",
+        MATLAB: "#e16737",
+        "Jupyter Notebook": "#DA5B0B",
+      };
+
+      async function ghFetch(path, params = {}) {
+        const url = new URL(GH_BASE + path);
+        Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v));
+        const headers = {
+          Accept: "application/vnd.github+json",
+          "X-GitHub-Api-Version": "2022-11-28",
+        };
+        if (GH_TOKEN) headers["Authorization"] = `Bearer ${GH_TOKEN}`;
+        const r = await fetch(url.toString(), { headers });
+        if (r.status === 202) return null;
+        if (r.status === 404) throw new Error("Repository not found (404)");
+        if (r.status === 403)
+          throw new Error(
+            "GitHub rate limit hit. Add a GH_TOKEN for 5000 req/hr.",
+          );
+        if (!r.ok) throw new Error(`GitHub API error: HTTP ${r.status}`);
+        return r.json();
+      }
+
+      async function fetchRepoData(owner, repo) {
+        const [
+          meta,
+          commitActivity,
+          contributors,
+          languages,
+          recentCommits,
+          codeFreq,
+        ] = await Promise.all([
+          ghFetch(`/repos/${owner}/${repo}`).catch(() => null),
+          ghFetch(`/repos/${owner}/${repo}/stats/commit_activity`).catch(
+            () => null,
+          ),
+          ghFetch(`/repos/${owner}/${repo}/contributors`, {
+            per_page: "10",
+            anon: "false",
+          }).catch(() => []),
+          ghFetch(`/repos/${owner}/${repo}/languages`).catch(() => ({})),
+          ghFetch(`/repos/${owner}/${repo}/commits`, { per_page: "10" }).catch(
+            () => [],
+          ),
+          ghFetch(`/repos/${owner}/${repo}/stats/code_frequency`).catch(
+            () => [],
+          ),
+        ]);
+        if (!meta) throw new Error(`Repository ${owner}/${repo} not found.`);
+
+        const heatmap = (commitActivity || []).map((w) => ({
+          week: w.week || 0,
+          days: w.days || Array(7).fill(0),
+          total: w.total || 0,
+        }));
+
+        const safeContribs = Array.isArray(contributors) ? contributors : [];
+        const totalContribs = safeContribs.reduce(
+          (s, c) => s + (c.contributions || 0),
+          0,
+        );
+        const topContributors = safeContribs.map((c) => ({
+          login: c.login || "unknown",
+          avatar: c.avatar_url || "",
+          contributions: c.contributions || 0,
+          pct: totalContribs
+            ? Math.round((c.contributions / totalContribs) * 1000) / 10
+            : 0,
+          url: c.html_url || "",
+        }));
+
+        const safeLangs = languages || {};
+        const langTotal =
+          Object.values(safeLangs).reduce((a, b) => a + b, 0) || 1;
+        const langList = Object.entries(safeLangs)
+          .sort((a, b) => b[1] - a[1])
+          .map(([name, bytes]) => ({
+            name,
+            bytes,
+            pct: Math.round((bytes / langTotal) * 1000) / 10,
+            color: LANG_COLORS[name] || "#888888",
+          }));
+
+        const COMMIT_EMOJIS = {
+          feat: "✨",
+          fix: "🐛",
+          refactor: "♻️",
+          docs: "📝",
+          perf: "⚡",
+          test: "🧪",
+          chore: "🔧",
+          style: "🎨",
+          ci: "⚙️",
+          build: "🏗️",
+          revert: "⏪",
+          security: "🔒",
+        };
+        const commitsOut = (
+          Array.isArray(recentCommits) ? recentCommits : []
+        ).map((c) => {
+          const msg = (c.commit?.message || "").split("\n")[0];
+          const prefix = msg.includes(":")
+            ? msg.split(":")[0].toLowerCase().trim()
+            : "";
+          return {
+            hash: (c.sha || "").slice(0, 7),
+            msg: msg.slice(0, 80),
+            author: c.author?.login || c.commit?.author?.name || "unknown",
+            date: c.commit?.author?.date || "",
+            emoji: COMMIT_EMOJIS[prefix] || "📝",
+            url: c.html_url || "",
+          };
+        });
+
+        const monthly = {};
+        for (const entry of Array.isArray(codeFreq) ? codeFreq : []) {
+          if (!Array.isArray(entry) || entry.length < 3) continue;
+          try {
+            const dt = new Date(entry[0] * 1000);
+            const key = `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, "0")}`;
+            if (!monthly[key]) monthly[key] = { adds: 0, dels: 0 };
+            monthly[key].adds += entry[1];
+            monthly[key].dels += Math.abs(entry[2]);
+          } catch {}
+        }
+        const now = new Date();
+        const monthLabels = [],
+          monthAdds = [],
+          monthDels = [];
+        for (let i = 11; i >= 0; i--) {
+          const dt = new Date(now.getFullYear(), now.getMonth() - i, 1);
+          const key = `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, "0")}`;
+          monthLabels.push(dt.toLocaleString("en-US", { month: "short" }));
+          monthAdds.push(monthly[key]?.adds || 0);
+          monthDels.push(-(monthly[key]?.dels || 0));
+        }
+
+        return {
+          meta: {
+            full_name: meta.full_name || `${owner}/${repo}`,
+            description: meta.description || "No description",
+            stars: meta.stargazers_count || 0,
+            forks: meta.forks_count || 0,
+            open_issues: meta.open_issues_count || 0,
+            language: meta.language || "Unknown",
+            created_at: meta.created_at || "",
+            updated_at: meta.updated_at || "",
+            default_branch: meta.default_branch || "main",
+            size_kb: meta.size || 0,
+            topics: meta.topics || [],
+            url: meta.html_url || "",
+            owner_avatar: meta.owner?.avatar_url || "",
+          },
+          stats: {
+            commits_last_year: heatmap.reduce((s, w) => s + (w.total || 0), 0),
+            contributors_shown: topContributors.length,
+            languages_count: langList.length,
+            size_kb: meta.size || 0,
+          },
+          heatmap,
+          contributors: topContributors,
+          languages: langList,
+          recent_commits: commitsOut,
+          activity: {
+            labels: monthLabels,
+            additions: monthAdds,
+            deletions: monthDels,
+          },
+        };
+      }
 
       // ---- HELPERS ----
       function fmt(n) {
@@ -1469,7 +1540,6 @@
         if (n >= 1e3) return (n / 1e3).toFixed(1) + "k";
         return n?.toLocaleString() ?? "—";
       }
-
       function timeSince(dateStr) {
         if (!dateStr) return "—";
         const d = new Date(dateStr),
@@ -1481,7 +1551,6 @@
         if (diff < 86400 * 365) return `${Math.floor(diff / 86400 / 30)}mo ago`;
         return `${Math.floor(diff / 86400 / 365)}y ago`;
       }
-
       function showTooltip(e, text) {
         const t = document.getElementById("tooltip");
         t.textContent = text;
@@ -1492,36 +1561,26 @@
       function hideTooltip() {
         document.getElementById("tooltip").style.opacity = 0;
       }
-
       function showError(title, msg) {
-        const c = document.getElementById("errorCard");
         document.getElementById("errorTitle").textContent = title;
         document.getElementById("errorMsg").textContent = msg;
-        c.classList.add("show");
-        if (msg.includes("rate limit") || msg.includes("403")) {
+        document.getElementById("errorCard").classList.add("show");
+        if (msg.includes("rate limit") || msg.includes("403"))
           document.getElementById("rateBanner").style.display = "block";
-        }
       }
       function hideError() {
         document.getElementById("errorCard").classList.remove("show");
       }
-
       function setLoadStep(n) {
         for (let i = 1; i <= 5; i++) {
           const el = document.getElementById(`step${i}`);
           if (i < n) {
             el.className = "load-step done";
-            el.textContent = el.textContent
-              .replace("⏳", "✅")
-              .replace("📊", "✅")
-              .replace("👥", "✅")
-              .replace("🔬", "✅")
-              .replace("✨", "✅");
+            el.textContent = el.textContent.replace(/[⏳📊👥🔬✨]/, "✅");
           } else if (i === n) el.className = "load-step active";
           else el.className = "load-step";
         }
       }
-
       function resetLoadSteps() {
         const texts = [
           "⏳ Fetching repository metadata...",
@@ -1554,8 +1613,6 @@
         const [owner, repo] = raw.split("/");
         hideError();
         document.getElementById("rateBanner").style.display = "none";
-
-        // Set loading state
         const btn = document.getElementById("analyzeBtn");
         btn.disabled = true;
         document.getElementById("analyzeBtnIcon").textContent = "⏳";
@@ -1563,33 +1620,17 @@
         document.getElementById("loadingOverlay").classList.add("show");
         document.getElementById("dashboard").classList.remove("show");
         resetLoadSteps();
-
-        // Animate steps
         let stepTimer = 1;
         const stepInterval = setInterval(() => {
           if (stepTimer <= 4) setLoadStep(stepTimer++);
         }, 600);
-
         try {
-          const res = await fetch(
-            `${API_BASE}/api/repo/${owner}/${encodeURIComponent(repo)}`,
-          );
+          const data = await fetchRepoData(owner, repo);
           clearInterval(stepInterval);
           setLoadStep(5);
-
-          if (!res.ok) {
-            const err = await res
-              .json()
-              .catch(() => ({ detail: `HTTP ${res.status}` }));
-            throw new Error(err.detail || `HTTP ${res.status}`);
-          }
-
-          const data = await res.json();
           currentData = data;
-
-          await new Promise((r) => setTimeout(r, 400)); // let step 5 show
+          await new Promise((r) => setTimeout(r, 400));
           document.getElementById("loadingOverlay").classList.remove("show");
-
           renderDashboard(data);
           document.getElementById("dashboard").classList.add("show");
           document
@@ -1598,17 +1639,10 @@
         } catch (err) {
           clearInterval(stepInterval);
           document.getElementById("loadingOverlay").classList.remove("show");
-          showError("Failed to load repository", err.message);
-          if (
-            err.message.includes("fetch") ||
-            err.message.includes("NetworkError") ||
-            err.message.includes("Failed")
-          ) {
-            showError(
-              "Cannot connect to server",
-              "Make sure the Python backend is running: python server.py",
-            );
-          }
+          showError(
+            "Failed to load repository",
+            err.message || "Unknown error. Check the repo name and try again.",
+          );
         } finally {
           btn.disabled = false;
           document.getElementById("analyzeBtnIcon").textContent = "🔍";
@@ -1620,7 +1654,6 @@
         document.getElementById("repoInput").value = name;
         analyzeRepo();
       }
-
       document.getElementById("repoInput").addEventListener("keydown", (e) => {
         if (e.key === "Enter") analyzeRepo();
       });
@@ -1629,13 +1662,10 @@
       function renderDashboard(d) {
         const m = d.meta,
           s = d.stats;
-        // Meta
         document.getElementById("repoAvatar").src = m.owner_avatar;
         document.getElementById("repoTitle").textContent = m.full_name;
         document.getElementById("repoDesc").textContent = m.description;
         document.getElementById("allCommitsLink").href = m.url + "/commits";
-
-        // Tags
         const tagColors = {
           JavaScript: "tag-amber",
           TypeScript: "tag-cyan",
@@ -1648,14 +1678,8 @@
           Ruby: "tag-red",
         };
         const langClass = tagColors[m.language] || "tag-green";
-        document.getElementById("repoTags").innerHTML = `
-    <span class="tag tag-cyan">⭐ ${fmt(m.stars)}</span>
-    <span class="tag tag-purple">🍴 ${fmt(m.forks)}</span>
-    <span class="tag ${langClass}">${m.language}</span>
-    <span class="tag tag-green">🐛 ${fmt(m.open_issues)} issues</span>
-  `;
-
-        // Stats
+        document.getElementById("repoTags").innerHTML =
+          `<span class="tag tag-cyan">⭐ ${fmt(m.stars)}</span><span class="tag tag-purple">🍴 ${fmt(m.forks)}</span><span class="tag ${langClass}">${m.language}</span><span class="tag tag-green">🐛 ${fmt(m.open_issues)} issues</span>`;
         document.getElementById("statStars").textContent = fmt(m.stars);
         document.getElementById("statCommits").textContent = fmt(
           s.commits_last_year,
@@ -1663,8 +1687,6 @@
         document.getElementById("statContribs").textContent =
           s.contributors_shown;
         document.getElementById("statForks").textContent = fmt(m.forks);
-
-        // Time control
         const created = new Date(m.created_at);
         document.getElementById("createdLabel").textContent =
           created.toLocaleDateString("en-US", {
@@ -1672,23 +1694,17 @@
             year: "numeric",
           });
         document.getElementById("timeDisplay").textContent = "Now";
-
-        // Info grid
         document.getElementById("infoGrid").innerHTML = `
-    <div class="info-item"><div class="info-label">Created</div><div class="info-value">${new Date(m.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</div></div>
-    <div class="info-item"><div class="info-label">Last Push</div><div class="info-value">${timeSince(m.updated_at)}</div></div>
-    <div class="info-item"><div class="info-label">Branch</div><div class="info-value">${m.default_branch}</div></div>
-    <div class="info-item"><div class="info-label">Size</div><div class="info-value">${m.size_kb > 1024 ? (m.size_kb / 1024).toFixed(1) + "MB" : m.size_kb + "KB"}</div></div>
-    <div class="info-item"><div class="info-label">Languages</div><div class="info-value">${s.languages_count}</div></div>
-    <div class="info-item"><div class="info-label">Open Issues</div><div class="info-value">${fmt(m.open_issues)}</div></div>
-  `;
-        const topics = m.topics || [];
-        document.getElementById("topicsWrap").innerHTML = topics
+          <div class="info-item"><div class="info-label">Created</div><div class="info-value">${new Date(m.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}</div></div>
+          <div class="info-item"><div class="info-label">Last Push</div><div class="info-value">${timeSince(m.updated_at)}</div></div>
+          <div class="info-item"><div class="info-label">Branch</div><div class="info-value">${m.default_branch}</div></div>
+          <div class="info-item"><div class="info-label">Size</div><div class="info-value">${m.size_kb > 1024 ? (m.size_kb / 1024).toFixed(1) + "MB" : m.size_kb + "KB"}</div></div>
+          <div class="info-item"><div class="info-label">Languages</div><div class="info-value">${s.languages_count}</div></div>
+          <div class="info-item"><div class="info-label">Open Issues</div><div class="info-value">${fmt(m.open_issues)}</div></div>`;
+        document.getElementById("topicsWrap").innerHTML = (m.topics || [])
           .slice(0, 8)
           .map((t) => `<span class="topic-chip">${t}</span>`)
           .join("");
-
-        // Activity summary
         const totalAdds = (d.activity.additions || []).reduce(
           (a, b) => a + b,
           0,
@@ -1696,15 +1712,12 @@
         const totalDels = Math.abs(
           (d.activity.deletions || []).reduce((a, b) => a + b, 0),
         );
-        document.getElementById("activitySummary").innerHTML = `
-    <div class="info-grid">
-      <div class="info-item"><div class="info-label">Lines Added</div><div class="info-value" style="color:var(--accent3);">+${fmt(totalAdds)}</div></div>
-      <div class="info-item"><div class="info-label">Lines Deleted</div><div class="info-value" style="color:var(--accent5);">-${fmt(totalDels)}</div></div>
-      <div class="info-item"><div class="info-label">Net Change</div><div class="info-value" style="color:${totalAdds - totalDels >= 0 ? "var(--accent3)" : "var(--accent5)"};">${totalAdds - totalDels >= 0 ? "+" : ""}${fmt(totalAdds - totalDels)}</div></div>
-      <div class="info-item"><div class="info-label">Commits/yr</div><div class="info-value">${fmt(s.commits_last_year)}</div></div>
-    </div>
-  `;
-
+        document.getElementById("activitySummary").innerHTML =
+          `<div class="info-grid">
+          <div class="info-item"><div class="info-label">Lines Added</div><div class="info-value" style="color:var(--accent3);">+${fmt(totalAdds)}</div></div>
+          <div class="info-item"><div class="info-label">Lines Deleted</div><div class="info-value" style="color:var(--accent5);">-${fmt(totalDels)}</div></div>
+          <div class="info-item"><div class="info-label">Net Change</div><div class="info-value" style="color:${totalAdds - totalDels >= 0 ? "var(--accent3)" : "var(--accent5)"};">${totalAdds - totalDels >= 0 ? "+" : ""}${fmt(totalAdds - totalDels)}</div></div>
+          <div class="info-item"><div class="info-label">Commits/yr</div><div class="info-value">${fmt(s.commits_last_year)}</div></div></div>`;
         renderHeatmap(d.heatmap);
         renderChart(d.activity);
         renderCommits(d.recent_commits, m.url);
@@ -1713,24 +1726,19 @@
         renderGraph(d.languages);
       }
 
-      // ---- HEATMAP ----
       function renderHeatmap(heatmap) {
-        const weeksEl = document.getElementById("heatmapWeeks");
-        const monthsEl = document.getElementById("heatmapMonths");
+        const weeksEl = document.getElementById("heatmapWeeks"),
+          monthsEl = document.getElementById("heatmapMonths");
         weeksEl.innerHTML = "";
         monthsEl.innerHTML = "";
-
         if (!heatmap || heatmap.length === 0) {
           weeksEl.innerHTML =
-            '<div style="color:var(--text-dim);font-size:12px;padding:20px;">No heatmap data available (GitHub may still be computing)</div>';
+            '<div style="color:var(--text-dim);font-size:12px;padding:20px;">No heatmap data yet (GitHub may still be computing)</div>';
           return;
         }
-
         const total = heatmap.reduce((s, w) => s + (w.total || 0), 0);
         document.getElementById("heatmapTotal").textContent =
           `${fmt(total)} commits`;
-
-        // Month labels
         const MONTHS = [
           "Jan",
           "Feb",
@@ -1748,8 +1756,8 @@
         const monthsHtml = [];
         let lastMonth = -1;
         heatmap.forEach((week, i) => {
-          const d = new Date(week.week * 1000);
-          const m = d.getMonth();
+          const d = new Date(week.week * 1000),
+            m = d.getMonth();
           if (m !== lastMonth) {
             monthsHtml.push(
               `<div class="heatmap-month" style="margin-left:${i * 16}px">${MONTHS[m]}</div>`,
@@ -1758,10 +1766,7 @@
           }
         });
         monthsEl.innerHTML = monthsHtml.join("");
-
-        // Find max for scaling
         const maxDay = Math.max(...heatmap.flatMap((w) => w.days || []), 1);
-
         heatmap.forEach((week) => {
           const weekEl = document.createElement("div");
           weekEl.className = "heatmap-week";
@@ -1800,18 +1805,12 @@
         });
       }
 
-      // ---- CHART ----
       function renderChart(activity) {
         if (activityChart) {
           activityChart.destroy();
           activityChart = null;
         }
         const ctx = document.getElementById("activityChart").getContext("2d");
-        const hasData =
-          activity &&
-          activity.additions &&
-          activity.additions.some((v) => v > 0);
-
         activityChart = new Chart(ctx, {
           type: "bar",
           data: {
@@ -1820,16 +1819,16 @@
               {
                 label: "Additions",
                 data: activity?.additions || [],
-                backgroundColor: "rgba(16,185,129,0.65)",
-                borderColor: "rgba(16,185,129,.9)",
+                backgroundColor: "rgba(168,213,194,0.55)",
+                borderColor: "rgba(168,213,194,.85)",
                 borderWidth: 1,
                 borderRadius: 4,
               },
               {
                 label: "Deletions",
                 data: activity?.deletions || [],
-                backgroundColor: "rgba(239,68,68,0.65)",
-                borderColor: "rgba(239,68,68,.9)",
+                backgroundColor: "rgba(224,92,138,0.55)",
+                borderColor: "rgba(224,92,138,.85)",
                 borderWidth: 1,
                 borderRadius: 4,
               },
@@ -1842,11 +1841,11 @@
             plugins: {
               legend: { display: false },
               tooltip: {
-                backgroundColor: "#161b22",
-                borderColor: "rgba(255,255,255,.1)",
+                backgroundColor: "#1e1428",
+                borderColor: "rgba(196,154,210,.15)",
                 borderWidth: 1,
-                titleColor: "#e6edf3",
-                bodyColor: "#7d8590",
+                titleColor: "#f0e8f5",
+                bodyColor: "#a890b8",
                 padding: 10,
                 callbacks: {
                   label: (ctx) =>
@@ -1856,17 +1855,17 @@
             },
             scales: {
               x: {
-                grid: { color: "rgba(255,255,255,.04)" },
+                grid: { color: "rgba(196,154,210,.05)" },
                 ticks: {
-                  color: "#7d8590",
+                  color: "#a890b8",
                   font: { family: "JetBrains Mono", size: 11 },
                 },
                 stacked: true,
               },
               y: {
-                grid: { color: "rgba(255,255,255,.04)" },
+                grid: { color: "rgba(196,154,210,.05)" },
                 ticks: {
-                  color: "#7d8590",
+                  color: "#a890b8",
                   font: { family: "JetBrains Mono", size: 11 },
                   callback: (v) => fmt(Math.abs(v)),
                 },
@@ -1877,77 +1876,62 @@
         });
       }
 
-      // ---- COMMITS ----
       function renderCommits(commits, repoUrl) {
         const COLORS = [
-          "#00e5ff",
-          "#7c3aed",
-          "#10b981",
-          "#f59e0b",
-          "#ef4444",
-          "#a78bfa",
+          "#a8d5c2",
+          "#c47ab5",
+          "#7b3f7a",
+          "#d4a0c8",
+          "#e05c8a",
+          "#a890b8",
         ];
         document.getElementById("commitTimeline").innerHTML =
           (commits || [])
             .map(
               (c, i) => `
-    <div class="timeline-item">
-      <div class="tl-line"></div>
-      <div class="tl-dot" style="border-color:${COLORS[i % COLORS.length]}40;color:${COLORS[i % COLORS.length]};">${c.emoji}</div>
-      <div class="tl-content">
-        <div class="tl-msg">${c.msg || "(no message)"}</div>
-        <div class="tl-meta">
-          <a class="tl-link tl-hash" href="${c.url}" target="_blank">${c.hash}</a>
-          <span>·</span><span>${c.author}</span>
-          <span>·</span><span>${timeSince(c.date)}</span>
-        </div>
-      </div>
-    </div>
-  `,
+          <div class="timeline-item">
+            <div class="tl-line"></div>
+            <div class="tl-dot" style="border-color:${COLORS[i % COLORS.length]}40;color:${COLORS[i % COLORS.length]};">${c.emoji}</div>
+            <div class="tl-content">
+              <div class="tl-msg">${c.msg || "(no message)"}</div>
+              <div class="tl-meta"><a class="tl-link tl-hash" href="${c.url}" target="_blank">${c.hash}</a><span>·</span><span>${c.author}</span><span>·</span><span>${timeSince(c.date)}</span></div>
+            </div>
+          </div>`,
             )
             .join("") ||
           '<div style="color:var(--text-dim);font-size:13px;">No commit data</div>';
       }
 
-      // ---- CONTRIBUTORS ----
       function renderContributors(contribs) {
         const COLORS = [
-          "#00e5ff",
-          "#7c3aed",
-          "#10b981",
-          "#f59e0b",
-          "#ef4444",
-          "#a78bfa",
-          "#06b6d4",
-          "#8b5cf6",
-          "#34d399",
-          "#fbbf24",
+          "#a8d5c2",
+          "#c47ab5",
+          "#7b3f7a",
+          "#d4a0c8",
+          "#e05c8a",
+          "#a890b8",
+          "#7b9bb5",
+          "#8b7ab5",
+          "#a8d5c2",
+          "#c47ab5",
         ];
         document.getElementById("contribBadge").textContent =
           `Top ${contribs.length}`;
         document.getElementById("contributorsList").innerHTML =
           (contribs || [])
             .map((c, i) => {
-              const color = COLORS[i % COLORS.length];
-              const initials = c.login.slice(0, 2).toUpperCase();
-              return `
-      <div class="contributor-row">
-        ${
-          c.avatar
-            ? `<img class="contrib-avatar" src="${c.avatar}" alt="${c.login}" onerror="this.outerHTML='<div class=contrib-avatar style=background:${color}20;color:${color};>${initials}</div>'">`
-            : `<div class="contrib-avatar" style="background:${color}20;color:${color};">${initials}</div>`
-        }
-        <div class="contrib-name" title="${c.login}">${c.login}</div>
-        <div class="contrib-bar-wrap"><div class="contrib-bar" style="width:${c.pct}%;background:linear-gradient(90deg,${color},${color}80);"></div></div>
-        <span class="contrib-pct">${c.pct}%</span>
-      </div>
-    `;
+              const color = COLORS[i % COLORS.length],
+                initials = c.login.slice(0, 2).toUpperCase();
+              return `<div class="contributor-row">
+            ${c.avatar ? `<img class="contrib-avatar" src="${c.avatar}" alt="${c.login}" onerror="this.outerHTML='<div class=contrib-avatar style=background:${color}20;color:${color};>${initials}</div>'">` : `<div class="contrib-avatar" style="background:${color}20;color:${color};">${initials}</div>`}
+            <div class="contrib-name" title="${c.login}">${c.login}</div>
+            <div class="contrib-bar-wrap"><div class="contrib-bar" style="width:${c.pct}%;background:linear-gradient(90deg,${color},${color}80);"></div></div>
+            <span class="contrib-pct">${c.pct}%</span></div>`;
             })
             .join("") ||
           '<div style="color:var(--text-dim);font-size:13px;">No contributor data</div>';
       }
 
-      // ---- LANGUAGES ----
       function renderLanguages(langs) {
         if (!langs || langs.length === 0) return;
         document.getElementById("langCountBadge").textContent =
@@ -1957,13 +1941,11 @@
           0,
           4,
         );
-
-        // SVG ring
         const circumference = 2 * Math.PI * 48;
         let offset = 0;
         const svgCircles = langs.slice(0, 6).map((l) => {
-          const dash = (l.pct / 100) * circumference;
-          const gap = circumference - dash;
+          const dash = (l.pct / 100) * circumference,
+            gap = circumference - dash;
           const c = `<circle cx="55" cy="55" r="48" fill="none" stroke="${l.color}" stroke-width="13" stroke-dasharray="${dash.toFixed(1)} ${gap.toFixed(1)}" stroke-dashoffset="${(-offset).toFixed(1)}" stroke-linecap="round"/>`;
           offset += dash;
           return c;
@@ -1971,48 +1953,38 @@
         document.getElementById("langRingSvg").innerHTML =
           `<circle cx="55" cy="55" r="48" fill="none" stroke="var(--surface3)" stroke-width="13"/>` +
           svgCircles.join("");
-
         document.getElementById("langList").innerHTML = langs
           .slice(0, 6)
           .map(
-            (l) => `
-    <div class="lang-item">
-      <div class="lang-dot" style="background:${l.color};"></div>
-      <span class="lang-name">${l.name}</span>
-      <span class="lang-pct">${l.pct}%</span>
-    </div>
-  `,
+            (l) =>
+              `<div class="lang-item"><div class="lang-dot" style="background:${l.color};"></div><span class="lang-name">${l.name}</span><span class="lang-pct">${l.pct}%</span></div>`,
           )
           .join("");
-
         document.getElementById("graphLangTag").textContent =
           `${primary.name} ${primary.pct}%`;
       }
 
-      // ---- GRAPH (animated nodes based on real lang data) ----
       function renderGraph(langs) {
         if (!langs || !langs.length) return;
         if (graphAnimId) {
           cancelAnimationFrame(graphAnimId);
           graphAnimId = null;
         }
-        // Use setTimeout so the card is rendered and has real pixel dimensions
         setTimeout(() => {
-          const canvas = document.getElementById("graphCanvas");
-          const ctx = canvas.getContext("2d");
-          const parent = canvas.parentElement;
-          const W = parent.clientWidth || 700;
-          const H = parent.clientHeight || 300;
+          const canvas = document.getElementById("graphCanvas"),
+            ctx = canvas.getContext("2d");
+          const parent = canvas.parentElement,
+            W = parent.clientWidth || 700,
+            H = parent.clientHeight || 300;
           canvas.style.width = W + "px";
           canvas.style.height = H + "px";
           canvas.width = Math.round(W * window.devicePixelRatio);
           canvas.height = Math.round(H * window.devicePixelRatio);
           ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
-
           const nodeCount = Math.min(langs.length, 10);
           const nodes = langs.slice(0, nodeCount).map((l, i) => {
-            const angle = (i / nodeCount) * Math.PI * 2;
-            const dist = i === 0 ? 0 : 0.28 + Math.random() * 0.18;
+            const angle = (i / nodeCount) * Math.PI * 2,
+              dist = i === 0 ? 0 : 0.28 + Math.random() * 0.18;
             return {
               label: l.name.slice(0, 7),
               r: i === 0 ? 30 : Math.max(11, 23 - i * 2),
@@ -2021,19 +1993,17 @@
               y: H / 2 + (i === 0 ? 0 : Math.sin(angle) * H * dist),
             };
           });
-
           const edges = nodes.slice(1).map((_, i) => [0, i + 1]);
           for (let i = 1; i < nodes.length - 1; i++) edges.push([i, i + 1]);
-          const vx = nodes.map(() => (Math.random() - 0.5) * 0.4);
-          const vy = nodes.map(() => (Math.random() - 0.5) * 0.4);
-
+          const vx = nodes.map(() => (Math.random() - 0.5) * 0.4),
+            vy = nodes.map(() => (Math.random() - 0.5) * 0.4);
           function draw() {
             ctx.clearRect(0, 0, W, H);
             edges.forEach(([a, b]) => {
               ctx.beginPath();
               ctx.moveTo(nodes[a].x, nodes[a].y);
               ctx.lineTo(nodes[b].x, nodes[b].y);
-              ctx.strokeStyle = "rgba(255,255,255,0.06)";
+              ctx.strokeStyle = "rgba(196,154,210,0.08)";
               ctx.lineWidth = 1;
               ctx.stroke();
             });
@@ -2075,7 +2045,6 @@
         }, 120);
       }
 
-      // ---- TIME SLIDER (visual only) ----
       function updateSlider(val) {
         const created = currentData?.meta?.created_at;
         if (!created) return;
